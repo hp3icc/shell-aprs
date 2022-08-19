@@ -1,6 +1,6 @@
 sudo mkdir /opt/shell-aprs
 
-cat > /lib/systemd/system/aprsb1.service  <<- "EOF"
+sudo cat > /lib/systemd/system/aprsb1.service <<- "EOF"
 [Unit]
 Description=APRS BEACOM1
 After=syslog.target network.target
@@ -16,10 +16,10 @@ ExecStart=/opt/shell-aprs/bcom1.sh
 
 [Install]
 WantedBy=multi-user.target
+
 EOF
 #
-cat > /opt/shell-aprs/bcom1.sh  <<- "EOF"
-
+sudo cat > /opt/shell-aprs/bcom1.sh <<- "EOF"
 #!/bin/bash
 ###### shellbeacon 1.0 A simple SHELL APRS Auto Beacon by WA1GOV
 ###### Works with Linux & Windows/Cygwin with netcat package installed
