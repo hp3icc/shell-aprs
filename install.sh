@@ -82,3 +82,4 @@ systemctl daemon-reload
 sudo chmod +x /opt/shell-aprs/*
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/hp3icc/shell-aprs/main/menu.sh)"
+menu-aprs
