@@ -69,14 +69,18 @@ EOF
 #
 cp /lib/systemd/system/aprsb1.service /lib/systemd/system/aprsb2.service
 cp /lib/systemd/system/aprsb1.service /lib/systemd/system/aprsb3.service
+cp /lib/systemd/system/aprsb1.service /lib/systemd/system/aprsb3.service
 cp /opt/shell-aprs/bcom1.sh /opt/shell-aprs/bcom2.sh
 cp /opt/shell-aprs/bcom1.sh /opt/shell-aprs/bcom3.sh
+cp /opt/shell-aprs/bcom1.sh /opt/shell-aprs/bcom4.sh
 
 
 sudo sed -i "s/BEACOM1/BEACOM2/g"  /lib/systemd/system/aprsb2.service
 sudo sed -i "s/BEACOM1/BEACOM3/g"  /lib/systemd/system/aprsb3.service
+sudo sed -i "s/BEACOM1/BEACOM4/g"  /lib/systemd/system/aprsb4.service
 sudo sed -i "s/bcom1/bcom2/g"  /lib/systemd/system/aprsb2.service
-sudo sed -i "s/bcom1/bcom3/g"  /lib/systemd/system/aprsb2.service
+sudo sed -i "s/bcom1/bcom3/g"  /lib/systemd/system/aprsb3.service
+sudo sed -i "s/bcom1/bcom4/g"  /lib/systemd/system/aprsb4.service
 
 systemctl daemon-reload
 sudo chmod +x /opt/shell-aprs/*
