@@ -79,3 +79,6 @@ sudo sed -i "s/bcom1/bcom2/g"  /lib/systemd/system/aprsb2.service
 sudo sed -i "s/bcom1/bcom3/g"  /lib/systemd/system/aprsb2.service
 
 systemctl daemon-reload
+sudo chmod +x /opt/shell-aprs/*
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/hp3icc/shell-aprs/main/menu.sh)"
