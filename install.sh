@@ -30,7 +30,7 @@ callsign="HP3ICC-10" # Change this to your callsign-ssid
 password="19384" # See http://apps.magicbug.co.uk/passcode/
 position="!0831.27N/08021.59Wr" # See position report below
 serverHost="noam.aprs2.net" # See http://www.aprs2.net/APRServe2.txt
-comment="APRS BEACOM emq-TE1 / Raspbian Proyect by hp3icc"
+comment="APRS BEACON emq-TE1 / Raspbian Proyect by hp3icc"
 
 serverPort=14580 # Definable Filter Port
 delay=1800 # default 30 minutes
@@ -82,6 +82,11 @@ sudo sed -i "s/BEACOM1/BEACOM4/g"  /lib/systemd/system/aprsb4.service
 sudo sed -i "s/bcom1/bcom2/g"  /lib/systemd/system/aprsb2.service
 sudo sed -i "s/bcom1/bcom3/g"  /lib/systemd/system/aprsb3.service
 sudo sed -i "s/bcom1/bcom4/g"  /lib/systemd/system/aprsb4.service
+
+sudo sed -i "s/APRS BEACON emq-TE1/APRS BEACON-1 emq-TE1/g"   /opt/shell-aprs/bcom1.sh
+sudo sed -i "s/APRS BEACON emq-TE1/APRS BEACON-2 emq-TE1/g"   /opt/shell-aprs/bcom2.sh
+sudo sed -i "s/APRS BEACON emq-TE1/APRS BEACON-3 emq-TE1/g"   /opt/shell-aprs/bcom3.sh
+sudo sed -i "s/APRS BEACON emq-TE1/APRS BEACON-4 emq-TE1/g"   /opt/shell-aprs/bcom4.sh
 
 systemctl daemon-reload
 sudo chmod +x /opt/shell-aprs/*
