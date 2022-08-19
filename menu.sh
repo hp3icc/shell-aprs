@@ -2,15 +2,15 @@ sudo cat > /bin/menu-aprs <<- "EOF"
 #!/bin/bash
 while : ; do
 choix=$(whiptail --title "Raspbian Proyect HP3ICC Menu Shell-APRS" --menu "Suba o Baje con las flechas del teclado y seleccione el numero de opcion:" 23 56 13 \
-1 " Editar Beacom1 " \
-2 " Editar Beacom2 " \
-3 " Editar Beacom3 " \
-4 " Start/Restart Beacom1 " \
-5 " Start/Restart Beacom2  " \
-6 " Start/Restart Beacom3 " \
-7 " Stop Beacom1  " \
-8 " Stop Beacom2   " \
-9 " Stop Beacom3 " \
+1 " Editar Beacon-1 " \
+2 " Editar Beacon-2 " \
+3 " Editar Beacon-3 " \
+4 " Start/Restart Beacon-1 " \
+5 " Start/Restart Beacon-2  " \
+6 " Start/Restart Beacon-3 " \
+7 " Stop Beacon-1  " \
+8 " Stop Beacon-2   " \
+9 " Stop Beacon-3 " \
 10 " Menu Principal " 3>&1 1>&2 2>&3)
 exitstatus=$?
 #on recupere ce choix
