@@ -34,7 +34,7 @@ comment="APRS BEACON emq-TE1 / Raspbian Proyect by hp3icc"
 
 serverPort=14580 # Definable Filter Port
 delay=1800 # default 30 minutes
-address="${callsign}>APRS,TCPIP:"
+address="${callsign}>APHP01,TCPIP:"
 
 # POSITION REPORT: The first character determines the position report format
 #          !4151.29N/07100.40W-
