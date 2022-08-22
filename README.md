@@ -1,5 +1,9 @@
 # shell-aprs
 
+![alt text](https://raw.githubusercontent.com/hp3icc/shell-aprs/main/shell-aprs.jpg)
+
+#
+
 wa1gov original code, with menu for 4 different beacons
 
 #
